@@ -1,12 +1,11 @@
 from django.db import models
 
-
-class FacebookUser(models.Model):
-    name = models.CharField(max_length=20)
-    friends = models.ManyToManyField('self')
-
-    def __str__(self):
-        return self.name
+# class FacebookUser(models.Model):
+#     name = models.CharField(max_length=20)
+#     friends = models.ManyToManyField('self')
+#
+#     def __str__(self):
+#         return self.name
 
 
 class InstagramUser(models.Model):
